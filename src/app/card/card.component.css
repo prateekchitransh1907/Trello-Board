@@ -1,0 +1,15 @@
+p {
+  /* background: blue; */
+  margin: 0 0 6px 0;
+  padding: 6px 6px 2px 8px;
+  /* border: 1px solid green; */
+  font-style: bold;
+  color: #fff;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}

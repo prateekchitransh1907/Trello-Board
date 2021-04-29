@@ -1,0 +1,30 @@
+<div>
+  <button
+    style="max-height: 5%; float: right;margin: 5px; "
+    (click)="toggleDisplayAddList()"
+  >
+    Add List
+  </button>
+  <div *ngIf="!displayAddList">
+    <app-list
+      *ngFor="let list of lists"
+      [list]="list"
+      [cardStore]="cardStore"
+      (deleteListEvent)="deleteList($event)"
+    ></app-list>
+  </div>
+
+  <div *ngIf="displayAddList">
+    <input
+      #addListInputTitle
+      type="text"
+      placeholder="List Name"
+      (keyup.enter)="
+        onEnter(addListInputTitle.value);
+        addListInputTitle.value = '';
+        displayAddList = false
+      "
+      autofocus
+    />
+  </div>
+</div>

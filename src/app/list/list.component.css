@@ -1,0 +1,36 @@
+.list {
+  background: lightyellow;
+  width: 350px;
+  padding: 6px;
+  margin: 5px;
+  display: inline-block;
+  float: left;
+  min-height: 50vh;
+  position: relative;
+}
+.list__title {
+  margin: 0;
+  padding: 16px 0;
+  align-self: flex-start;
+  display: inline;
+}
+.list a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  outline: 0;
+  background: #fff;
+  box-shadow: none;
+}
+
+.addNewCard {
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+}

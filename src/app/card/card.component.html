@@ -1,0 +1,15 @@
+<div
+  class="card"
+  draggable="true"
+  (dragstart)="dragStart($event)"
+  id="{{ card.title }}"
+>
+  <div style="width: 100%; background-color: blue;">
+    <p style="display: inline">{{ card.title }}</p>
+    <button (click)="deleteItem(card.id)" style="display: inline; float:right">
+      x
+    </button>
+  </div>
+
+  <h4 style="margin-left: 5px">{{ card.description }}</h4>
+</div>
